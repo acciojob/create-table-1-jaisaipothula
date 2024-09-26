@@ -20,5 +20,4 @@ document.getElementById('addRowBtn').addEventListener('click', function() {
 
     // Append the new row to the table body
     tableBody.insertBefore(newRow, tableBody.firstChild); // Insert at the top
-
 });
