@@ -1,25 +1,42 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<meta charset=utf-8 /> 
-	<title>Insert row in a table</title> 
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert Row Example</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
 </head>
-
 <body>
-	<table id="sampleTable" border="1"> 
-		<tr><td>Row1 cell1</td> 
-		<td>Row1 cell2</td></tr> 
-		<tr><td>Row2 cell1</td> 
-		<td>Row2 cell2</td></tr> 
-	</table><br> 
-	
-	<input type="button" onclick="insert_Row()" value="Insert row">  
-    <script type="text/javascript" src="./script.js">
-</script>
 
+    <h1>Sample Table</h1>
+    <button onclick="insert_Row()">Insert Row</button> <!-- Button to insert row -->
+    
+    <table id="sampleTable">
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+        </tr>
+        <tr>
+            <td>Row 1 Cell 1</td>
+            <td>Row 1 Cell 2</td>
+        </tr>
+        <tr>
+            <td>Row 2 Cell 1</td>
+            <td>Row 2 Cell 2</td>
+        </tr>
+    </table>
+
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
 </body>
-
 </html>
