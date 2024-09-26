@@ -3,38 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Insert Row Example</title>
+    <title>Create Table App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- Bootstrap CSS -->
     <style>
-        table {
-            width: 50%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-        th, td {
-            border: 1px solid black;
-            padding: 10px;
-            text-align: left;
+        body {
+            margin: 20px;
         }
     </style>
 </head>
 <body>
 
-    <h1>Sample Table</h1>
-    <button onclick="insert_Row()">Insert Row</button> <!-- Button to insert row -->
-    
-    <table id="sampleTable">
-        <tr>
-            <th>Column 1</th>
-            <th>Column 2</th>
-        </tr>
-        <tr>
-            <td>Row 1 Cell 1</td>
-            <td>Row 1 Cell 2</td>
-        </tr>
-        <tr>
-            <td>Row 2 Cell 1</td>
-            <td>Row 2 Cell 2</td>
-        </tr>
+    <h1>Create Table App</h1>
+
+    <button type="button" id="addRowBtn" class="btn btn-primary">Add Row</button> <!-- Button to add rows -->
+
+    <table id="sampleTable" class="table table-striped">
+        <thead>
+            <tr>
+                <th>Column 1</th>
+                <th>Column 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Initial Cell 1</td>
+                <td>Initial Cell 2</td>
+            </tr>
+        </tbody>
     </table>
 
     <script src="script.js"></script> <!-- Link to your JavaScript file -->
